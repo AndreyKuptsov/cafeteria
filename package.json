@@ -1,0 +1,20 @@
+{
+  "name": "cafeteria-ru",
+  "version": "1.0.0",
+  "description": "Digital ecosystem for Cafeteria.ru - авторское кафе",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["cafe", "restaurant", "pwa", "ordering", "booking"],
+  "author": "Cafeteria.ru",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
